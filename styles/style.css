@@ -1,0 +1,73 @@
+body {
+  width: 1100px;
+  height: 3028px;
+  background-color: whitesmoke;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  width: 1100px;
+  height: 293px;
+  background-color: white;
+}
+
+.logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.nav_ul {
+  position: relative;
+  left: 50px;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.circle {
+  list-style: circle;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+address {
+  position: relative;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  align-items: flex-start;
+  max-width: 240px;
+}
+
+.address_ul {
+  list-style: none;
+}
+
+.main_text {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.addr_txt {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.about,
+.check_lots {
+  padding-left: 5px;
+}
