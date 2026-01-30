@@ -4,7 +4,7 @@ body {
   background-color: whitesmoke;
 }
 
-header {
+.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -70,4 +70,17 @@ address {
 .about,
 .check_lots {
   padding-left: 5px;
+}
+
+.image{
+  min-height: 757px;
+}
+
+.description{
+  position: absolute;
+  min-height: 757px;
+  width: 1100px;
+  z-index: 1;
+  background-color: black;
+  opacity: 60%;
 }
