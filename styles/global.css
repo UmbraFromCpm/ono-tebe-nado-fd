@@ -32,9 +32,11 @@ a {
 }
 
 img {
+  display: block;
   width: 100%;
 }
 
 button {
   font: inherit;
+  cursor: pointer;
 }
