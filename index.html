@@ -1,140 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  <link rel="stylesheet" href="fonts/fonts.css" />
-  <link rel="stylesheet" href="styles/global.css" />
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-<body>
-  <div class="page-wrapper">
-    <header class="header">
-      <nav class="header__menu">
-        <ul class="nav_ul">
-          <li class="main main_text">главная</li>
-          <li class="check_lots circle underline main_text">посмотреть лоты</li>
-          <li class="about circle underline main_text">об аукционе</li>
-        </ul>
-      </nav>
-      <a><img class="logo" src="images/logo-black.svg" alt="logo-black" /></a>
-      <address class="address_header">
-        <ul class="address_ul">
-          <li>
-            <a href="tel:+99995555555" class="underline addr_txt">+9 999 555 5555</a>
-          </li>
-          <li>
-            <a href="mailto:info@sobaka.ge" class="underline addr_txt">info@sobaka.ge</a>
-          </li>
-          <li>
-            <p class="addr_txt">наб. Принсенграхт 263- 265, Амстердам</p>
-          </li>
-        </ul>
-      </address>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <nav class="header__menu">
+          <ul class="header__links-list">
+            <li
+              class="header__links-list-item header__links-list-item_no-bullit"
+            >
+              главная
+            </li>
+            <li class="header__links-list-item">посмотреть лоты</li>
+            <li class="header__links-list-item">об аукционе</li>
+          </ul>
+        </nav>
+        <a><img class="logo" src="images/logo-black.svg" alt="logo-black" /></a>
+        <address class="address_header">
+          <ul class="header__address-list">
+            <li>
+              <a href="tel:+99995555555" class="addr_txt underline"
+                >+9 999 555 5555</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@sobaka.ge" class="addr_txt underline"
+                >info@sobaka.ge</a
+              >
+            </li>
+            <li>
+              <p class="addr_txt">наб. Принсенграхт 263- 265, Амстердам</p>
+            </li>
+          </ul>
+        </address>
+      </header>
 
-    <main>
-      <section class="cover">
-        <div class="description"></div>
-        <img class="image" src="images/cover.jpg" alt="" />
-        <h1>
-          <span class="word1">ОНО</span>
-          <span class="word2">ТЕБЕ</span>
-          <span class="word3">НАДО</span>
-        </h1>
-        <h2 class="text_down">
-          <span class="word21">АУКЦИОН</span>
-          <span class="word22">ВЕЩЕЙ,</span>
-          <span class="word23">В</span>
-          <span class="word24">КОТОРЫЕ</span>
-          <span class="word25">НИКТО</span>
-          <span class="word26">НЕ</span>
-          <span class="word27">ВЕРИЛ</span>
-        </h2>
-        <button class="button">СДЕЛАТЬ СТАВКУ</button>
-      </section>
-
-      <section class="lots">
-        <h2 class="lots__heading">ЛОТЫ</h2>
-        <ul class="lots__card-list">
-          <li class="lots__card-list-item">
-            <a class="card-link" href="#">
-              <article class="card card_type_film">
-                <div class="overlay"></div>
-                <p class="lot-main-text">Фильм режиссёра, который бросил киношколу</p>
-                <p class="lot-second-text-film">
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-                </p>
-              </article>
-            </a>
-          </li>
-          <li class="lots__card-list-item">
-            <a class="card-link" href="#">
-              <article class="card card_type_book">
-                <div class="overlay"></div>
-                <p class="lot-main-text">Книга, где описан один скучный день из жизни рекламного агента</p>
-                <p class="lot-second-text-book">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён.
-                </p>
-              </article>
-            </a>
-          </li>
-          <li class="lots__card-list-item">
-            <a class="card-link" href="#">
-              <article class="card card_type_picture">
-                <div class="overlay"></div>
-                <p class="lot-main-text">Картина, которую повторит даже 5-летний сын маминой подруги</p>
-                <p class="lot-second-text-picture">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-                </p>
-              </article>
-            </a>
-          </li>
-          <li class="lots__look-more">
-            <a href="#" class="lots__look-more-link underline">посмотреть больше</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="about-auc">
-        <div class="circle-white-logo">
-          <img src="images/logo-white.svg" class="logo-white" alt="Logo" />
-        </div>
-        <div class="about-content">
-          <h2 class="about-title">ОБ АУКЦИОНЕ</h2>
-          <div class="about-text-wrapper">
-            <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион.</p>
-            <p>Когда-то они казались просто неудачными. Но сейчас без этих лотов невозможно представить современную культуру.</p>
+      <main>
+        <section class="cover">
+          <div class="overlay">
+            <button class="button">СДЕЛАТЬ СТАВКУ</button>
           </div>
-        </div>
-      </section>
-    </main>
+          <img class="image" src="images/cover.jpg" alt="" />
+          <h1 class="main-title">
+            <span class="title-word left-word">оно</span>
+            <span class="title-word center-word">тебе</span>
+            <span class="title-word right-word">надо</span>
+          </h1>
+          <h2 class="cover__description">
+            <span>аукцион</span>
+            <span>вещей,</span>
+            <span class="letter-v">в</span>
+            <span>которые</span>
+            <span>никто</span>
+            <span>не</span>
+            <span>верил</span>
+          </h2>
+        </section>
 
-    <footer class="footer">
-      <address class="address_footer">
-        <ul class="address_footer_ul">
-          <li><a href="tel:+99995555555" class="addr_txt_footer underline">+9 999 555 5555</a></li>
-          <li><a href="mailto:info@sobaka.ge" class="addr_txt_footer underline">info@sobaka.ge</a></li>
-          <li><p class="addr_txt_footer">наб. Принсенграхт 263-265, Амстердам</p></li>
-        </ul>
-      </address>
-      <nav class="footer__menu">
-        <ul class="nav_ul_footer">
-          <li><a href="#" class="main_text_footer">главная</a></li>
-          <li><a href="#" class="main_text_footer underline">посмотреть лоты</a></li>
-          <li><a href="#" class="main_text_footer underline">об аукционе</a></li>
-        </ul>
-      </nav>
-      <div class="footer__social">
-        <ul class="social_list">
-          <li><a href="#"><img src="images/yt.svg" alt="YouTube" /></a></li>
-          <li><a href="#"><img src="images/vk.svg" alt="VK" /></a></li>
-          <li><a href="#"><img src="images/pinterest.svg" alt="Pinterest" /></a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-</body>
+        <section class="lots">
+          <h2 class="lots__heading">ЛОТЫ</h2>
+          <ul class="lots__card-list">
+            <li class="lots__card-list-item">
+              <a class="card-link" href="#">
+                <article class="card card_type_film">
+                  <div class="overlay"></div>
+                  <h3 class="lot-main-text">
+                    Фильм режиссёра, который бросил киношколу
+                  </h3>
+                  <p class="lot-description">
+                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                    ставка, если бы вы не знали, что режиссёр — Пол Томас
+                    Андерсон?
+                  </p>
+                </article>
+              </a>
+            </li>
+            <li class="lots__card-list-item">
+              <a class="card-link" href="#">
+                <article class="card card_type_book">
+                  <div class="overlay"></div>
+                  <h3 class="lot-main-text">
+                    Книга, где описан один скучный день из жизни рекламного
+                    агента
+                  </h3>
+                  <p class="lot-description">
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
+                    и с переходами на древнеанглийский. В ней одновременно
+                    рассказывается о 16 июня 1904 года и об истории литературы,
+                    начиная с античных времён.
+                  </p>
+                </article>
+              </a>
+            </li>
+            <li class="lots__card-list-item">
+              <a class="card-link" href="#">
+                <article class="card card_type_picture">
+                  <div class="overlay"></div>
+                  <h3 class="lot-main-text">
+                    Картина, которую повторит даже 5-летний сын маминой подруги
+                  </h3>
+                  <p class="lot-description">
+                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                    котиков...
+                  </p>
+                </article>
+              </a>
+            </li>
+            <li class="lots__look-more">
+              <a href="#" class="lots__look-more-link">посмотреть больше</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="about-auc">
+          <div class="circle-white-logo">
+            <img src="images/logo-white.svg" class="logo-white" alt="Logo" />
+          </div>
+          <div class="about-content">
+            <h2 class="about-title">ОБ АУКЦИОНЕ</h2>
+            <div class="about-text-wrapper">
+              <p>
+                Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+              </p>
+              <p>
+                Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <address class="address_footer">
+          <ul class="address_footer_ul">
+            <li>
+              <a href="tel:+99995555555" class="addr_txt_footer underline"
+                >+9 999 555 5555</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@sobaka.ge" class="addr_txt_footer underline"
+                >info@sobaka.ge</a
+              >
+            </li>
+            <li>
+              <p class="addr_txt_footer">
+                наб. Принсенграхт 263-265, Амстердам
+              </p>
+            </li>
+          </ul>
+        </address>
+        <nav class="footer__menu">
+          <ul class="nav_ul_footer">
+            <li><a href="#" class="main_text_footer">главная</a></li>
+            <li>
+              <a href="#" class="main_text_footer underline">посмотреть лоты</a>
+            </li>
+            <li>
+              <a href="#" class="main_text_footer underline">об аукционе</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <ul class="social_list">
+            <li>
+              <a href="#"><img src="images/yt.svg" alt="YouTube" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/vk.svg" alt="VK" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/pinterest.svg" alt="Pinterest" /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
