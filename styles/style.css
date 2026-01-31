@@ -169,6 +169,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
 }
 
 .button {
@@ -188,6 +189,7 @@ body {
   color: #ffffff;
   background-color: transparent;
   border: 1px solid white;
+  cursor: pointer;
 }
 
 .word21, .word22, .word23, .word24, .word25, .word26, .word27 {
@@ -195,8 +197,8 @@ body {
 }
 
 .word21 {
-  top: 668px;
-  left: 50px;
+  top: 0;
+  left: 0;
   width: 108px;
   height: 28px;
   font-family: "Raleway";
@@ -208,12 +210,90 @@ body {
   color: #ffffff;
 }
 
-.word22 { top: 668px; left: 184px; width: 85px; height: 28px; font-family: "Raleway"; font-style: normal; font-weight: 400; font-size: 22px; line-height: 28px; text-transform: uppercase; color: #ffffff; }
-.word23 { top: 668px; left: 291px; width: 15px; height: 28px; font-family: "Raleway"; font-style: normal; font-weight: 400; font-size: 22px; line-height: 28px; letter-spacing: 1.1em; text-transform: uppercase; color: #ffffff; }
-.word24 { top: 668px; left: 330px; width: 105px; height: 28px; font-family: "Raleway"; font-style: normal; font-weight: 400; font-size: 22px; line-height: 28px; text-transform: uppercase; color: #ffffff; }
-.word25 { top: 668px; left: 458px; width: 77px; height: 28px; font-family: "Raleway"; font-style: normal; font-weight: 400; font-size: 22px; line-height: 28px; text-transform: uppercase; color: #ffffff; }
-.word26 { top: 668px; left: 560px; width: 30px; height: 28px; font-family: "Raleway"; font-style: normal; font-weight: 400; font-size: 22px; line-height: 28px; text-transform: uppercase; color: #ffffff; }
-.word27 { top: 668px; left: 612px; width: 75px; height: 28px; font-family: "Raleway"; font-style: normal; font-weight: 400; font-size: 22px; line-height: 28px; text-transform: uppercase; color: #ffffff; }
+.word22 {
+  top: 0;
+  left: 134px;
+  width: 85px;
+  height: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.word23 {
+  top: 0;
+  left: 241px;
+  width: 15px;
+  height: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 1.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.word24 {
+  top: 0;
+  left: 280px;
+  width: 105px;
+  height: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.word25 {
+  top: 0;
+  left: 408px;
+  width: 77px;
+  height: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.word26 {
+  top: 0;
+  left: 510px;
+  width: 30px;
+  height: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.word27 {
+  top: 0;
+  left: 562px;
+  width: 75px;
+  height: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 
 .lots {
   width: 1052px;
@@ -253,9 +333,15 @@ body {
   height: 596px;
 }
 
-.card-link,
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
 .card {
   height: 100%;
+  position: relative;
 }
 
 .card_type_film {
@@ -276,16 +362,16 @@ body {
   background-size: cover;
 }
 
-.card {
-  flex-direction: row;
-}
-
 .overlay {
   z-index: 1;
   width: 100%;
   height: 100%;
   background-color: #000000;
   opacity: 0.6;
+}
+
+.lots__look-more {
+  list-style: none;
 }
 
 .lots__look-more-link {
@@ -297,6 +383,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+  color: #000;
 }
 
 .lot-main-text {
@@ -304,6 +391,7 @@ body {
   top: 48px;
   left: 40px;
   right: 40px;
+  z-index: 2;
   width: calc(100% - 80px);
   overflow: hidden;
   overflow-wrap: break-word;
@@ -315,6 +403,7 @@ body {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
 }
 
 .lot-second-text-film, 
@@ -324,17 +413,27 @@ body {
   left: 40px;
   right: 40px;
   bottom: 48px;
+  z-index: 2;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #ffffff;
+  margin: 0;
 }
 
-.lot-second-text-film { height: 144px; }
-.lot-second-text-book { height: 360px; }
-.lot-second-text-picture { height: 264px; }
+.lot-second-text-film {
+  height: 144px;
+}
+
+.lot-second-text-book {
+  height: 360px;
+}
+
+.lot-second-text-picture {
+  height: 264px;
+}
 
 .about-auc {
   display: grid;
@@ -449,10 +548,4 @@ body {
 .social_list img {
   width: 48px;
   height: 48px;
-}
-
-.underline {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
 }
