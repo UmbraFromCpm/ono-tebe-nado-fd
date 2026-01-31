@@ -1,7 +1,11 @@
 body {
-  width: 1100px;
-  height: 3028px;
   background-color: whitesmoke;
+  margin: 0;}
+
+.page-wrapper {
+  width: 1100px;
+  min-height: 3028px;
+  background-color: #ffffff;
 }
 
 .header {
@@ -492,87 +496,65 @@ color: #FFFFFF;
 
 }
 
-.about-auc{
+.about-auc {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 119px; 
+  
   width: 1052px;
-  height: 595px;
   background-color: #fff;
   margin-left: 24px;
-  position: relative;
+  margin-bottom: 180px;
+  padding-top: 35px; 
 }
+
 
 .circle-white-logo {
   width: 240px;
   height: 240px;
   background-color: #000;
   border-radius: 50%;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   
-  top: 35px;
-  left: 47px;
+  
+  justify-self: center; 
 }
 
 .logo-white {
   width: 148px;
   height: 114px;
-  
-  object-fit: contain; 
+  object-fit: contain;
 }
 
-.about-title{
-position: absolute;
-width: 291px;
-height: 47px;
-top: 136px;
-left: 359px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 47px;
-text-transform: uppercase;
-
-color: #000000;
-
-
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 101px; 
 }
 
-.about-first{
-
-  position: absolute;
-width: 688px;
-height: 120px;
-left: 359px;
-top: 283px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #000000;
-
-
+.about-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+  margin: 0 0 100px 0; 
 }
 
-.about-second{position: absolute;
-width: 693px;
-height: 168px;
-left: 359px;
-top: 427px;
+.about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; 
+}
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-
-color: #000000;
-
-
+.about-text-wrapper p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0; 
+  max-width: 693px;
 }
