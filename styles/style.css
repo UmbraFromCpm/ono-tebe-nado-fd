@@ -21,7 +21,7 @@
   position: relative;
   left: 50px;
   display: flex;
-  gap: 30px;
+  gap: 33px;
   list-style: circle;
 }
 
@@ -56,6 +56,7 @@
 .addr_txt {
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 24px;
   text-decoration: none;
 }
@@ -63,29 +64,41 @@
 .cover {
   position: relative;
   margin-bottom: 180px;
+  overflow: hidden;
 }
 
 .image {
+  display: block;
+  width: 100%;
   min-height: 757px;
   object-fit: cover;
 }
 
-/* Исправленный и объединенный overlay (ошибки 2-5 и 6) */
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
   opacity: 0.6;
+  background-color: #000;
+}
+
+.cover__content-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 165px 50px 50px;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title-word {
-  position: absolute;
-  z-index: 3;
-  height: 115px;
   color: #ffffff;
   font-weight: 700;
   font-size: 100px;
@@ -95,30 +108,39 @@
 }
 
 .left-word {
-  top: 165px;
-  left: 50px;
-  width: 286px;
+  align-self: flex-start;
 }
 
 .center-word {
-  top: 300px;
-  left: calc(50% - 339px / 2);
-  width: 339px;
-  text-align: center;
+  align-self: center;
+  margin-left: 30px;
 }
 
 .right-word {
-  top: 435px;
-  left: 663px;
-  width: 387px;
-  text-align: right;
+  align-self: end;
+  margin-right: -30px;
+}
+
+.cover__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cover__description {
+  display: flex;
+  gap: 24px;
+  max-width: 637px;
+  margin-bottom: 10px;
+  margin-left: 1px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .button {
-  position: relative;
-  top: 656px;
-  left: 794px;
-  z-index: 3;
   width: 256px;
   height: 51px;
   border: 1px solid white;
@@ -126,24 +148,9 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   text-transform: uppercase;
   background-color: transparent;
-}
-
-.cover__description {
-  position: absolute;
-  top: 668px;
-  left: 50px;
-  z-index: 3;
-  display: flex;
-  gap: 24px;
-  width: 637px;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
-  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .lots {
@@ -181,7 +188,6 @@
   text-decoration: none;
 }
 
-/* Исправленное форматирование (ошибки 1-4) */
 .card {
   position: relative;
   display: flex;
@@ -233,12 +239,13 @@
 
 .lots__look-more-link {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 7px;
   margin-left: 40px;
+  border-bottom: 1px solid;
   color: #000;
   font-size: 20px;
   line-height: 23px;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .about-auc {
@@ -257,6 +264,7 @@
   align-items: center;
   width: 240px;
   height: 240px;
+  margin-left: 47px;
   border-radius: 50%;
   background-color: #000;
 }
@@ -268,6 +276,8 @@
 }
 
 .about-content {
+  position: relative;
+  left: -95px;
   display: flex;
   flex-direction: column;
   padding-top: 101px;
@@ -285,11 +295,11 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.about-text-wrapper p {
+  min-width: 693px;
+  color: #000000;
   font-weight: 400;
   font-size: 20px;
+  font-style: normal;
   line-height: 24px;
 }
 
@@ -305,8 +315,10 @@
 }
 
 .addr_txt_footer {
-  color: #000;
+  color: #000000;
+  font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 24px;
   text-decoration: none;
 }
